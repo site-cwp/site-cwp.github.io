@@ -19,15 +19,18 @@ prose:
     _posts:
       - name: "layout"
         field:
-          element: "select"
-          label: "Post layout?"
-          placeholder: " "
+          element: "multiselect"
+          label: "Post layout"
+          placeholder: ""
           options:
-          	- name: "Product"
-              value: "products"
-            - name: "Default (Like News posts)"
-              value: "post"
-      
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
+            - name: "Pears"
+              value: "pears"
+            - name: "Mangos"
+              value: "mangos"
       - name: "title"
         field:
           element: "text"

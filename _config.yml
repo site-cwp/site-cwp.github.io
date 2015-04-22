@@ -23,14 +23,10 @@ prose:
           label: "Post layout"
           placeholder: ""
           options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
-            - name: "Pears"
-              value: "pears"
-            - name: "Mangos"
-              value: "mangos"
+            - name: "Product"
+              value: "products"
+            - name: "Post"
+              value: "post"
       - name: "title"
         field:
           element: "text"
@@ -91,7 +87,6 @@ prose:
           label: "Post tags"
           placeholder: "For SEO. Seperate each by comma"
           value: ""
-		
 # Categories
 categories: 
  - news

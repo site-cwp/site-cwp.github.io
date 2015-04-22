@@ -59,7 +59,7 @@ prose:
         field:
           element: "multiselect"
           label: "Select categories"
-          placeholder: "E.g. resource, white paper"
+          placeholder: "resource, white paper"
           options:
             - name: "Products"
               value: "products"

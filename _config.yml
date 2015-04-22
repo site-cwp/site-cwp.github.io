@@ -43,18 +43,18 @@ prose:
           label: "Direct to download (only for resources - like Factsheets)"
           options:
             - name: "Yes"
-            - value: "yes"
+              value: "yes"
             - name: "No"
-            - value: "no"
+              value: "no"
       - name: "contains_pdf"
         field:
           element: "select"
           label: "Have you attached a PDF? (only for resources. PDF must be placed inside the pdf folder with the same title as this post)"
           options:
             - name: "Yes"
-            - value: "yes"
+              value: "yes"
             - name: "No"
-            - value: "no"
+              value: "no"
       - name: "categories"
         field:
           element: "multiselect"

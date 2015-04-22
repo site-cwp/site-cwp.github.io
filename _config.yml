@@ -37,19 +37,21 @@ prose:
           element: "text"
           label: "Summary"
           value: ""
-      - name: "direct_link"
+      - name: "contains_pdf"
         field:
           element: "select"
-          label: "Direct to download (only for resources - like Factsheets)"
+          label: "Have you attached a PDF?"
+          help: "Only for resources. PDF must be placed inside the pdf folder with the same title as this post."
           options:
             - name: "Yes"
               value: "yes"
             - name: "No"
               value: "no"
-      - name: "contains_pdf"
+      - name: "direct_link"
         field:
           element: "select"
-          label: "Have you attached a PDF? (only for resources. PDF must be placed inside the pdf folder with the same title as this post)"
+          label: "Direct to download"
+          help: "Only select 'Yes' if you have attached a PDF - e.g. Factsheets are all direct downloads."
           options:
             - name: "Yes"
               value: "yes"

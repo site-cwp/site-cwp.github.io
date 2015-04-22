@@ -19,7 +19,7 @@ prose:
     _posts:
       - name: "layout"
         field:
-          element: "multiselect"
+          element: "select"
           label: "Post layout"
           placeholder: ""
           options:

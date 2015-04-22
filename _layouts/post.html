@@ -29,7 +29,7 @@ color: #F2F2F4!important;
       <h3 class="text-thin">{% if page.categories contains 'news' %}<b>{{ page.date | date: "%b %d, %y" }}</b><br> {% endif %}{{ content }}</h3>
     </div>
     <div class="large-3 large-offset-1 medium-3 medium-offset-4 column">
-      {% if page.contains_pdf %}
+      {% if page.contains_pdf == 'yes' %}
         {% if page.pdf_name %}
           <a target="_blank" rel="nofollow" href="/assets/pdf/{{ page.pdf_name }}.pdf">
             <div class="download-panel">

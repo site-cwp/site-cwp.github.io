@@ -1,0 +1,27 @@
+# Site settings
+title: The Changing Workplace
+description: The Changing Workplace | We are an industry-leading provider of web-based CAFM software solutions for Corporate Real Estate and Facilities groups.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://changingworkplace.com" # the base hostname & protocol for your site
+port: 8500
+
+# Build settings
+markdown: kramdown
+highligher: rouge
+
+#Plugins
+
+# Categories
+categories: 
+ - news
+ - products
+ - services
+ - products
+ - resources
+ - featured
+ - casestudy
+ - whitepaper
+ - factsheet
+
+#Permalinks
+permalink: /:categories/:title

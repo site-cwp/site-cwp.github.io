@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /*.cfm$
+Disallow: /*.cfm
+Disallow: /*.pdf$
+Disallow: /*.pdf
+
+Sitemap: http://changingworkplace.com/sitemap.xml  

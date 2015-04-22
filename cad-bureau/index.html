@@ -1,0 +1,36 @@
+---
+layout: products
+title: CAD Bureau
+summary: Our CAD bureau services are globally renowned and can be customised as required. An extension of your in-house CAD team or a standalone outsourced service to scale up and down as required.
+ring1content: We will adhere to your existing CAD standard or make recommendations as needed.
+ring2content: Make significant costs savings and meet compliance requirements. We have simple, transparent pricing and provide support and guidance to streamline your estate and building management.
+---
+
+<div class="fullwidth white"> 
+    <div class="inner row">
+        {% for posts in site.categories.services %}
+           <a href="{{ posts.url | prepend: site.baseurl }}">
+                            <div class="large-4 medium-6 small-12 columns tile-container">
+                                <figure class="tile">
+                                    <img class="tile-img" src="{{ page.assets }}product-img/{{ posts.title }}1.png">
+                                    <div class="tile-title">
+                                        <div class="title-inner">
+                                            <h2 class="text-light text-thin">{{ posts.title }}</h2>
+                                        </div>
+                                    </div>
+                                    <figcaption class="text-dark tile-content">
+                                    <h3 class="text-dark text-thin text-center">{{ posts.title }}</h3>
+                                    <p style="border-top:2px solid rgb(229, 229, 229);"><br>{{ posts.summary }} </p>
+                                    <div class="row readmore-row">
+                                        <div class="large-7 large-offset-2 columns"><h5 class="text-thin text-dark" style="text-align:right;"><i>Read more</i></h5></div>
+                                        <div class="large-3 columns readmore-container"><img class="readmore" src="/assets/images/readmore.png"></div>
+                                    </div>  
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+        {% endfor %}
+            
+            
+        </div>  
+</div>

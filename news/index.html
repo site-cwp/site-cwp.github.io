@@ -1,0 +1,55 @@
+---
+layout: default
+assets : ../assets/images/
+---
+<style type="text/css">
+.news-row{
+    max-height: 100%!important;
+}
+.readmore-date{
+    margin-top:5px;
+}
+</style>
+<div class="row news-row bg-row">
+    <div class="row slogan-row">
+       <br><br>
+        <div  class="slogan">
+            <h4>Broadcasts</h4>
+        </div>
+        
+    </div>
+<div class="row banner-content">   
+    {% for posts in site.categories.news %}
+            <a href="{{ posts.url | prepend: site.baseurl }}">
+                            <div class="large-4 medium-6 small-12 columns tile-container">
+                                <figure class="tile">
+                                    <div class="tile-title">
+                                        <div class="title-inner">
+                                            <h2 class="text-light text-thin">{{ posts.title }}</h2>
+                                        </div>
+                                    </div>
+                                    <figcaption class="text-dark tile-content">
+                                    <h2 class="text-dark text-thin text-center">{{ posts.title }}</h2>
+                                    <p style="border-top:2px solid rgb(229, 229, 229);">{{ posts.summary }} </p>
+                                    <div class="row readmore-row">
+                                        <div class="large-4 columns">
+                                            {% if posts.job %}
+                                            <p style="font-size:small!important;" class="readmore-date text-thin text-dark"><b>{{ posts.date | date: "%b %d, %y" }}</b></p>
+                                            {% endif %}
+                                        </div>
+                                        <div class="readmore-hover">
+                                            <div class="large-5 columns"><h5 class="text-thin text-dark" style="text-align:right;"><i>Read more</i></h5></div>
+                                        <div class="large-3 columns readmore-container"><img class="readmore" src="/{{ page.assets }}readmore.png"></div>
+                                        </div>
+                                        
+                                    </div>  
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </a>
+            {% endfor %}
+
+            
+        </div>
+    
+</div>

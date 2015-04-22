@@ -1,0 +1,373 @@
+
+<header class="site-header">
+<div class="google-headings"><h1>{{ page.title }}</h1><br><h1>CAD Bureau, Workplace Tracking</h1><br><h1>MobileCoRE, WebCoRE</h1><br><h1>The Changing Workplace, Software Solutions</h1></div>
+    <!--Nav-->
+    <div class="nav-row">
+        <div class="row">
+            <nav class="top-bar" data-topbar role="navigation"> 
+                <ul class="title-area">
+                    <li class="name">
+                        <h3 class="text-thin"><a href="#" onClick="return false;"><b>THE </b>CHANGING <br>WORKPLACE</a></h3>
+                    </li>
+                        <li class="toggle-topbar menu-icon"><a href="#" onClick="return false;"><span></span></a></li>
+                </ul>
+
+                <section class="top-bar-section ">
+                    <div class="site-title">
+                        <h3 class="text-thin"><span><b>THE </b></span>CHANGING WORKPLACE</h3>
+                        <p style="font-size:1.2em;" class="text-dark"><a href="/index.html#contact"><img alt="Email us" style="max-width:25px;margin-top:-4px;margin-right:10px;" src="{{ page.assets }}icon-email.png"></a>+44 (0) 1444 441000</p>
+                    </div>
+                   
+                    <ul>
+                        <li class="nav-home "><a class="active" href="/"><i class="fi-home"></i></a>
+                        </li>
+                        <li class="nav-products"><a>Products</a>
+                        </li>
+                        <li class="nav-services"><a>CAD Bureau</a>
+                        </li>
+                        <li class="nav-resources"><a>Resources</a>
+                        </li>
+                        <li class="nav-news"><a href="/news/">Broadcasts</a>
+                        </li> 
+                        <li class="nav-about-us"><a href="/about-us/">About us</a>
+                        </li>   
+                    </ul>
+                </section> 
+            </nav> 
+        </div> 
+    </div>
+    <div class="nav-mobile-container pale-blue">
+        <ul>
+            <li class="mobile-nav-item"><a href="/">Home</a></li>
+            <li class="mobile-nav-item"><a href="/webcore/">Products</a></li>
+            <li class="mobile-nav-item"><a href="/cad-bureau/">CAD Bureau</a></li>
+            <li class="mobile-nav-item"><a href="/">Resources</a></li>
+            <li class="mobile-nav-item"><a href="/news/">Broadcasts</a></li>
+            <li class="mobile-nav-item"><a href="/about-us/">About Us</a></li>
+        </ul>
+    </div>
+
+        <div class=" products-overlay-container"> 
+            <div class="row products-overlay">
+                <div class="row spacer-row-invis"></div>
+                <div class="row products-top-row">
+                    <div class="large-3 column">
+                        <img class="prod-img prod1-img" alt="MobileCoRE" src="{{ page.assets }}product-img/featured-img/MobileCoRE-featured.png">
+
+                        <img class="prod-img prod2-img" alt="WebCoRE" src="{{ page.assets }}product-img/featured-img/WebCoRE-featured.png">
+
+                        <img class="prod-img prod3-img" alt="Workplace tracking" src="{{ page.assets }}product-img/featured-img/Workplace%20Tracking-featured.png">
+                    </div>
+                        <a href="/mobilecore/">
+                        <div class="large-3 column prod1">
+                            <h4>MobileCoRE</h4>
+                            <p>Surveys app for building data reporting and visualisation of people, space and assets.</p>
+                        </div>
+                        </a>
+                    
+                        <a href="/webcore/">
+                        <div class="large-3 column prod2">
+                            <h4>WebCoRE</h4>
+                            <p>Computer Aided Facilities Management (CAFM) system for easy portfolio management.</p>
+                        </div>
+                        </a>
+                    
+                        <a href="/workplace-tracking/">
+                        <div class="large-3 column prod3">
+                            <h4>Workplace Tracking</h4>
+                            <p>Validate how space is used at any point in time for a clear picture of usage and capacity.</p>
+                        </div>
+                        </a>
+                   
+                    
+                
+                <div class="row spacer-row-invis"></div>
+                <div class="row products-top-row">
+                    <b>
+                    
+                    <div class="large-9 large-offset-3 columns">
+                        <div class="row spacer-row"></div>
+                        <a href="/mobilecore/">
+                            <u>MobileCoRE</u>
+                        </a>
+                        <br>
+                    </div>
+                        
+                    <div class="large-3 large-offset-3 column">
+                        {% for posts in site.categories.products-mobile limit:1 %}
+                            <a href="{{ posts.url | prepend: site.baseurl }}">
+                                {{ posts.title }}
+                            </a>
+                            <br>
+                        {% endfor %}
+                    </div>
+                    <div class="large-3 column">
+                    {% for posts in site.categories.products-mobile limit:1 offset:1 %}
+                        <a href="{{ posts.url | prepend: site.baseurl }}">
+                            {{ posts.title }}
+                        </a>
+                        <br>
+                    {% endfor %}
+                    </div>
+                    <div class="large-3 column">
+                    {% for posts in site.categories.products-mobile limit:1 offset:2 %}
+                        <a href="{{ posts.url | prepend: site.baseurl }}">
+                            {{ posts.title }}
+                        </a>
+                        <br>
+                    {% endfor %}
+                    </div>
+                    </b>
+                </div>
+                <div class="row spacer-row-invis"></div>
+                <div class="row products-top-row">
+                    <b>
+                    <a href="/index.html#contact">
+                    <div class="large-3 column">
+                        <h4 class="contact-btn" style="border:3px solid white;text-align:center;"> &nbsp;Contact us</h4>
+                    </div>
+                    </a>
+                    <div class="large-9 columns">
+                        <div class="row spacer-row"></div>
+                        <a href="/webcore/">
+                            <u>WebCoRE</u>
+                        </a>
+                        <br>
+                    </div>
+                        
+                    <div class="large-3 large-offset-3 column">
+                        {% for posts in site.categories.products limit:2 %}
+                            <a href="{{ posts.url | prepend: site.baseurl }}">
+                                {{ posts.title }}
+                            </a>
+                            <br>
+                        {% endfor %}
+                    </div>
+                    <div class="large-3 column">
+                    {% for posts in site.categories.products limit:2 offset:2 %}
+                        <a href="{{ posts.url | prepend: site.baseurl }}">
+                            {{ posts.title }}
+                        </a>
+                        <br>
+                    {% endfor %}
+                    </div>
+                    <div class="large-3 column">
+                    {% for posts in site.categories.products limit:2 offset:4 %}
+                        <a href="{{ posts.url | prepend: site.baseurl }}">
+                            {{ posts.title }}
+                        </a>
+                        <br>
+                    {% endfor %}
+                    </div>
+                    </b>
+                </div>
+                <div class="row spacer-row-invis"></div>
+                <div class="row products-top-row">
+                    <b>
+                    
+                    <div class="large-9 large-offset-3 columns">
+                        <div class="row spacer-row"></div>
+                        <a href="/workplace-tracking/">
+                            <u>Workplace Tracking</u>
+                        </a>
+                        <br>
+                    </div>
+                        
+                    <div class="large-3 large-offset-3 column">
+                        {% for posts in site.categories.products-workplace limit:1 %}
+                            <a href="{{ posts.url | prepend: site.baseurl }}">
+                                {{ posts.title }}
+                            </a>
+                            <br>
+                        {% endfor %}
+                    </div>
+                    <div class="large-3 column">
+                    {% for posts in site.categories.products-workplace limit:1 offset:1 %}
+                        <a href="{{ posts.url | prepend: site.baseurl }}">
+                            {{ posts.title }}
+                        </a>
+                        <br>
+                    {% endfor %}
+                    </div>
+                    <div class="large-3 column">
+                    {% for posts in site.categories.products-workplace limit:1 offset:2 %}
+                        <a href="{{ posts.url | prepend: site.baseurl }}">
+                            {{ posts.title }}
+                        </a>
+                        <br>
+                    {% endfor %}
+                    </div>
+                    </b>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        <div class=" services-overlay-container">
+            <div class="row products-overlay">  
+                <div class="row spacer-row-invis"></div>
+                <div class="row products-top-row">
+                    <div class="large-3 column">
+                        
+                        <img alt="Cad Bureau, WebCoRE, MobileCoRE, Workplace Tracking, Software, Solutions, CAFM" class="prod-img prod1-img"src="{{ page.assets }}product-img/featured-img/CAD Bureau-featured.png">
+                    </div>
+                    <b>
+                    <div class="large-9 column">
+                        <a href="/cad-bureau/">
+                           <u>Overview</u>
+                        </a>
+                        <br>
+                    </div>
+                    <div class="large-3 column">
+
+                        {% for posts in site.categories.services limit:3 %}
+                            <a href="{{ posts.url | prepend: site.baseurl }}">
+                                {{ posts.title }}
+                            </a>     
+                            <br>                   
+                        {% endfor %}
+                    </div>      
+                    <div class="large-3 column">
+                        {% for posts in site.categories.services limit:3 offset:3 %}
+                            <a href="{{ posts.url | prepend: site.baseurl }}">
+                                {{ posts.title }}
+                            </a> 
+                            <br>                       
+                        {% endfor %}
+                    </div>        
+                    <div class="large-3 column">
+                        {% for posts in site.categories.services limit:3 offset:6 %}
+                            <a href="{{ posts.url | prepend: site.baseurl }}">
+                                {{ posts.title }}
+                            </a>   
+                            <br>                     
+                        {% endfor %}
+                    </div>  
+                    </b>                  
+                </div>
+                <div class="row spacer-row"></div>
+                <div class="row products-top-row">
+                    <b>
+                    <a href="/index.html#contact">
+                    <div class="large-3 column">
+                        <h4 class="contact-btn" style="border:3px solid white;text-align:center;"> &nbsp;Contact us</h4>
+                    </div>
+                    </a>
+                    <div class="large-3 column">
+                    {% for posts in site.categories.services and site.categories.services limit:4 offset:9 %}
+                        <a href="{{ posts.url | prepend: site.baseurl }}">
+                            {{ posts.title }}
+                        </a>
+                        <br>
+                    {% endfor %}
+                    </div>
+                    <div class="large-3 column">
+                    {% for posts in site.categories.services limit:5 offset:13 %}
+                        <a href="{{ posts.url | prepend: site.baseurl }}">
+                            {{ posts.title }}
+                        </a>
+                        <br>
+                    {% endfor %}
+                    </div>
+                    <div class="large-3 column">
+                    {% for posts in site.categories.services limit:5 offset:22 %}
+                        <a href="{{ posts.url | prepend: site.baseurl }}">
+                            {{ posts.title }}
+                        </a>
+                        <br>
+                    {% endfor %}
+                    </div>
+                    </b>
+                </div>
+                <div class="row spacer-row-invis"></div>
+
+            </div>
+        </div>
+        <div class="resources-overlay-container">
+            <div class="row products-overlay">
+                <div class="row spacer-row-invis"></div>
+                <div class="row products-top-row">
+                    <div class="large-3 column">
+                        <img alt="Cad Bureau, WebCoRE, MobileCoRE, Workplace Tracking, Software, Solutions, CAFM" src="/assets/images/product-img/resources.png" class="prod-img">
+                    </div>
+                    
+                    <div class="large-9 column">
+                        <h5 class="text-light">For the latest information on our projects, innovations, products and services you can download our case studies, white papers and fact sheet documents. These provide examples of client work, best practice, details on industry hot-topics and corporate real estate and facilities management issues.</h5>
+                    </div>
+                    
+                </div>
+                <div class="row spacer-row"></div>
+                <div class="row products-top-row">
+                    <b>
+                    <a href="/index.html#contact">
+                    <div class="large-3 column">
+                        <h4 class="contact-btn" style="border:3px solid white;text-align:center;"> &nbsp;Contact us</h4>
+                    </div>
+                    </a>
+                    <div class="large-3 column">
+                            <u class="text-light">
+                            Case Studies
+                        </u>
+                        <br>
+                    {% for posts in site.categories.casestudy limit:7 %}
+                        <a href="{{ posts.url | prepend: site.baseurl }}">
+                            {{ posts.title }}
+                        </a>
+                        <br>
+                    {% endfor %}
+                    </div>
+                    <div class="large-3 column">
+                            <u class="text-light">
+                            White Papers 
+                        </u>
+                        <br>
+                    {% for posts in site.categories.whitepaper limit:7 %}
+                        <a href="{{ posts.url | prepend: site.baseurl }}">
+                            {{ posts.title }}
+                        </a>
+                        <br>
+                    {% endfor %}
+                    </div>
+                    <div class="large-3 column">
+                            <u class="text-light">
+                            Fact Sheets
+                        </u>
+                        <br>
+                    {% for posts in site.categories.factsheet limit:7 %}
+                        <a target="_blank" href="{{ posts.url | prepend: site.baseurl }}">
+                            {{ posts.title }}
+                        </a>
+                        <br>
+                    {% endfor %}
+                    </div>
+                    </b> 
+                </div>
+                <div class="row spacer-row-invis"></div>
+
+            </div>
+        </div>
+</header>
+
+<div class="sidebar-container hide-for-medium hide-for-small-only">
+    <div class="slide1"><div class="sidebar-item"><i class="fi-share"></i></div>
+        <div class="sidebar-slide1 share-container">
+            <a href="https://twitter.com/The_CWP" target="_blank"><div class="column large-4"><img alt="Cad Bureau, WebCoRE, MobileCoRE, Workplace Tracking, Software, Solutions, CAFM" src="/assets/images/icon-twitter.png"></div></a>
+            <a href="http://www.youtube.com/user/changingworkplace?feature=mhee" target="_blank"><div class="column large-4"><img alt="Cad Bureau, WebCoRE, MobileCoRE, Workplace Tracking, Software, Solutions, CAFM" src="/assets/images/icon-yt.png"></div></a>
+            <a href="http://www.linkedin.com/company/the-changing-workplace" target="_blank"><div class="column large-4"><img alt="Cad Bureau, WebCoRE, MobileCoRE, Workplace Tracking, Software, Solutions, CAFM" src="/assets/images/icon-linkedin.png"></div></a>
+        </div>
+    </div>
+   <div class="slide2"><div class="sidebar-item text-center">
+       <a href="/index.html#contact" class="text-center"><b style="line-height:50px;">Contact</b></a>
+        </div>
+        
+    </div>
+    <div class="slide3"><div class="sidebar-item"><i class="fi-link"></i></div>
+        <div class="sidebar-slide3 link-container">
+            <a href="https://www.myshadowspace.com/login/" target="_blank"><div class="column large-6"><img alt="Cad Bureau, WebCoRE, MobileCoRE, Workplace Tracking, Software, Solutions, CAFM" src="/assets/images/icon-shadow.png"></div></a>
+            <a href="https://www.corpxchange.com/accounts/login/" target="_blank"><div class="column large-6"><img alt="Cad Bureau, WebCoRE, MobileCoRE, Workplace Tracking, Software, Solutions, CAFM" src="/assets/images/icon-corps.png"></div></a>
+        </div>
+    </div>
+
+</div>
+     

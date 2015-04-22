@@ -1,0 +1,85 @@
+---
+layout: default
+assets : /assets/images/
+---
+<style type="text/css">
+.inner img{
+    max-width: 100%!important;
+}
+</style> 
+{% if page.contains_pdf %}
+            {% if page.pdf_name %}
+              <a target="_blank" href="/assets/pdf/{{ page.pdf_name }}.pdf">
+                <div class="hide-for-small-only download-container" style="text-align:center;">
+                  <img alt="Our Products and Services: WebCoRE, MobileCoRe, CAD Bureau, Workplace Tracking, Space Management" class="download-icon" src="/assets/images/download-icon.png" alt="">
+                </div>
+              </a>
+            {% else %}
+              <a target="_blank" href="/assets/pdf/{{ page.title }}.pdf">
+                <div class="hide-for-small-only download-container" style="text-align:center;">
+                  <img alt="Our Products and Services: WebCoRE, MobileCoRe, CAD Bureau, Workplace Tracking, Space Management" class="download-icon" src="/assets/images/download-icon.png" alt="">
+                </div>
+              </a>
+            {% endif %}
+{% endif %}
+<div class="fullwidth white" style="padding-bottom:25px;"> 
+	<article class="inner row"><br>
+  		<div class="large-12 column">
+  			<h1 class="text-center text-thin">{{ page.title }}</h1>
+  		</div>
+  		<div class="large-8 large-offset-2 column">
+  			<h3 class="text-center text-thin">{{ page.summary }}</h3>
+  		</div>
+  </article>
+</div>
+<div class="fullwidth purple">
+	<article class="inner row"><br>
+  		<div class="large-5 column text-center inline ">
+  			<h3 class="text-center text-light text-thin"><br>{{ page.ring1content }}</h3>
+  		</div>
+  		<div class="text-center large-7 3d-img inline middle column ">
+  			<img alt="Our Products and Services: WebCoRE, MobileCoRe, CAD Bureau, Workplace Tracking, Space Management" class="" src="{{ page.assets }}product-img/{{ page.title }}1.png">
+  		</div>
+  </article>
+</div> 
+<div class="fullwidth pale-blue">
+	<article class="inner row"><br>
+		  <div class="text-center large-6 column middle inline">
+  			<img class="" src="{{ page.assets }}product-img/{{ page.title }}2.png">
+  		</div>
+  		<div class="large-6 column inline "> 
+  			<h3 class="text-center text-thin"><br>{{ page.ring2content }}</h3>
+  		</div>
+  		
+  </article>
+</div>
+<div class="fullwidth orange"> 
+
+</div>
+{% if page.ring3content %}
+<div class="fullwidth white">
+	<article class="inner row">
+		<div class="large-12 column text-center">
+			<h3 class="text-thin text-dark">
+				{{ page.ring3content}}
+			</h3>
+			<br><br>
+		</div>
+
+	</article>
+</div>
+{% endif %}
+{% if page.ring4content %}
+<div class="fullwidth purple">
+  <article class="inner row">
+    <div class="large-12 column text-center">
+      <h3 class="text-thin text-light">
+        {{ page.ring4content}}
+      </h3>
+      <br><br>
+    </div>
+
+  </article>
+</div>
+{% endif %}
+{{ content }}

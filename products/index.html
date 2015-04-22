@@ -1,0 +1,50 @@
+---
+layout: default
+assets : ../assets/images/
+---
+<style type="text/css">
+/*    body::after{
+        background: url(../assets/images/bgnews.svg) no-repeat center center fixed!important;
+        opacity: 0.6;
+        background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+-moz-background-size: cover
+    }*/
+</style>
+<div class="row bg-row">
+    <div class="row slogan-row">
+       <br><br>
+        <div  class="slogan">
+            <h4>Products</h4>
+            <img class="slogan-image" src="{{ page.assets }}products.png">
+        </div>
+        
+    </div>
+<div class="row banner-content">
+        {% for posts in site.categories.products %}
+            
+            <a class="post-link" href="{{ posts.url | prepend: site.baseurl }}">
+            <div class="small-2 home-item-container large-4 columns">
+                <div class="home-item">
+                    <div class="home-item-head purple">
+                        <h4>{{ posts.title }}</h4><!-- <i class="float-right">{{ posts.date | date: "%b %-d" }}</i> -->
+                    </div>
+                    {% if posts.include_image : yes %}
+
+                    <div class="home-item-image-container">
+                        <img class="home-item-image " src="{{ page.assets }}{{ posts.title }}.jpg">
+                    </div>
+                    {% endif %}
+                    <h5 class="home-item-text "><p>{{ posts.summary }}</p></h5>
+                </div>
+
+            </div>
+            </a>
+            
+        {% endfor %}
+            
+            
+        </div>
+    
+</div>

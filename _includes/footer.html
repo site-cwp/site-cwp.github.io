@@ -1,0 +1,410 @@
+<footer class="site-footer">
+
+    <div class="row">
+        <div class="footer-row">
+                        <br>
+                        <ul class="large-4 medium-4 small-12">
+                            <li class=""><a href="/">Home</a>
+                            </li>
+                            <li class=""><a href="/webcore/">Products</a>
+                            </li>
+                            <li class=""><a href="/cad-bureau/">CAD Bureau</a>
+                            </li>
+                            <li class=""><a href="">Resources</a>
+                            </li>
+                        </ul>
+                        <ul class="center-footer large-4 medium-4 small-12">
+                            
+                            <li class=""><a href="/news/">Broadcasts</a>
+                            </li>
+                            <li><a href="/about-us/">About Us</a></li>
+                            <li><a href="/index.html#contact">Contact Us</a></li>
+                            <li><a href="/disclaimer">Disclaimer & Policies</a></li>
+                        </ul>
+                        <ul class="large-4 medium-4 small-12">
+                            <li class=""><a href="/disclaimer">Registered office 1 Boltro Road,</a>
+                            </li>
+                            <li class=""><a href="/disclaimer">Haywards Heath,</a>
+                            </li>
+                            <li class=""><a href="/disclaimer">West Sussex,</a>
+                            </li>
+                            <li class=""><a href="/disclaimer">RH16 1BY</a>
+                            </li>
+                        </ul>
+        </div> 
+                    </section> 
+                </nav>
+    </div>
+
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/foundation.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+
+             var j = 0;
+             var delay = 7000; //millisecond delay between cycles
+             function cycleThru(){
+                     var jmax = $("ul#cyclelist li").length -1;
+                     $("ul#cyclelist li:eq(" + j + ")")
+                             .animate({"opacity" : "1"} ,400)
+                             .animate({"opacity" : "1"}, delay)
+                             .animate({"opacity" : "0"}, 400, function(){
+                                     (j == jmax) ? j=0 : j++;
+                                     cycleThru();
+                             });
+                     };
+
+             cycleThru();
+
+         });
+        $(document).foundation();
+        $(document).ready(function(){            
+
+            $('.envelope-panel').hover(function(){
+                $('.page').css('height', '210px');
+            });
+            var menu = $('.products-overlay-container')
+            var timeout = 0;
+            var hovering = false;
+            menu.hide();
+
+            $('.nav-products')
+                .on("mouseenter", function () {
+                hovering = true;
+                // Open the menu
+                $('.products-overlay-container')
+                    .stop(true, true)
+                    .slideDown(400);
+
+                if (timeout > 0) {
+                    clearTimeout(timeout);
+                }
+            })
+                .on("mouseleave", function () {
+                resetHover();
+            });
+
+            $(".products-overlay-container")
+                .on("mouseenter", function () {
+                // reset flag
+                hovering = true;
+                // reset timeout
+                //startTimeout();
+            })
+                .on("mouseleave", function () {
+                // The timeout is needed incase you go back to the main menu
+                resetHover();
+            });
+
+            function startTimeout() {
+                // This method gives you 1 second to get your mouse to the sub-menu
+                timeout = setTimeout(function () {
+                    closeMenu();
+                }, 50);
+            };
+
+            function closeMenu() {
+                // Only close if not hovering
+                if (!hovering) {
+                    $('.products-overlay-container').stop(true, true).hide();
+                }
+            };
+
+            function resetHover() {
+                // Allow the menu to close if the flag isn't set by another event
+                hovering = false;
+                // Set the timeout
+                startTimeout();
+            };
+            /*-----------------*/
+
+
+            function removeHoverCSSRule() {
+              if ('createTouch' in document) {
+                try {
+                  var ignore = /:hover/;
+                  for (var i = 0; i < document.styleSheets.length; i++) {
+                    var sheet = document.styleSheets[i];
+                    if (!sheet.cssRules) {
+                      continue;
+                    }
+                    for (var j = sheet.cssRules.length - 1; j >= 0; j--) {
+                      var rule = sheet.cssRules[j];
+                      if (rule.type === CSSRule.STYLE_RULE && ignore.test(rule.selectorText)) {
+                        sheet.deleteRule(j);
+                      }
+                    }
+                  }
+                }
+                catch(e) {
+                }
+              }
+            }
+        });
+        $(document).ready(function(){
+            $('.toggle-topbar a').click(function(){ $('.nav-mobile-container').slideToggle("fast");});
+            var menu = $('.services-overlay-container')
+            var timeout = 0;
+            var hovering = false;
+            menu.hide();
+
+            $('.nav-services')
+                .on("mouseenter", function () {
+                hovering = true;
+                // Open the menu
+                $('.services-overlay-container')
+                    .stop(true, true)
+                    .slideDown(400);
+
+                if (timeout > 0) {
+                    clearTimeout(timeout);
+                }
+            })
+                .on("mouseleave", function () {
+                resetHover();
+            });
+
+            $(".services-overlay-container")
+                .on("mouseenter", function () {
+                // reset flag
+                hovering = true;
+                // reset timeout
+                //startTimeout();
+            })
+                .on("mouseleave", function () {
+                // The timeout is needed incase you go back to the main menu
+                resetHover();
+            });
+
+            function startTimeout() {
+                // This method gives you 1 second to get your mouse to the sub-menu
+                timeout = setTimeout(function () {
+                    closeMenu();
+                }, 50);
+            };
+
+            function closeMenu() {
+                // Only close if not hovering
+                if (!hovering) {
+                    $('.services-overlay-container').stop(true, true).hide();
+                }
+            };
+
+            function resetHover() {
+                // Allow the menu to close if the flag isn't set by another event
+                hovering = false;
+                // Set the timeout
+                startTimeout();
+            };
+            /*-----------------*/ 
+            (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+"use strict";
+var support = require("./utils").support;
+var dispatchClick = require("./utils").dispatchClick;
+
+if (typeof document.addEventListener !== 'function') {
+    return;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    if(!support) {
+        return;
+    }
+
+    var cover = document.createElement('div'),
+        body = document.body,
+        coverStyle = cover.style,
+        scrollStarted = false,
+        timer,
+        clicked = false,
+        pos = { x: 0, y: 0 };
+
+    coverStyle.cssText = [
+        '-webkit-transform: translate3d(0,0,0);',
+        'transform: translate3d(0,0,0);',
+        'position: fixed;',
+        'top: 0;',
+        'right: 0;',
+        'left: 0;',
+        'bottom: 0;',
+        'opacity: 0;',
+        'z-index: 9;',
+        'pointer-events: none'
+    ].join('');
+    body.appendChild(cover);
+
+    window.addEventListener('scroll', function scroll() {
+        if(!scrollStarted) {
+            coverStyle.pointerEvents = 'auto';
+            scrollStarted = true;
+        }
+        clearTimeout(timer);
+
+        timer = setTimeout(function(){
+            coverStyle.pointerEvents = 'none';
+            scrollStarted = false;
+            if(clicked) {
+                dispatchClick(pos);
+                clicked = false;
+            }
+        },500);
+    }, false);
+
+    // capture all clicks and store x, y coords for later
+    document.addEventListener('click', function clickCatcher(event) {
+        if(event.target === cover && !event.synthetic) {
+            pos.x = event.clientX;
+            pos.y = event.clientY;
+            clicked = true;
+        }
+    }, false);
+}, false);
+},{"./utils":2}],2:[function(require,module,exports){
+"use strict";
+var support = (function support() {
+    var element = document.createElement('x');
+    element.style.cssText = 'pointer-events:auto';
+    return element.style.pointerEvents === 'auto';
+}());
+
+function dispatchClick(coords) {
+    var event = document.createEvent('MouseEvent'),
+        elem = document.elementFromPoint(coords.x, coords.y);
+
+    event.initMouseEvent(
+        'click',
+        true /* bubble */, true /* cancelable */,
+        window, null,
+        coords.x, coords.y, 0, 0, /* coordinates */
+        false, false, false, false, /* modifier keys */
+        0 /*left*/, null
+    );
+    event.synthetic = true;
+
+    elem.dispatchEvent(event);
+}
+
+exports.support = support;
+exports.dispatchClick = dispatchClick;
+},{}]},{},[1])
+        });
+
+        $(document).ready(function(){
+            var menu = $('.resources-overlay-container')
+            var timeout = 0;
+            var hovering = false;
+            menu.hide();
+
+            $('.nav-resources')
+                .on("mouseenter", function () {
+                hovering = true;
+                // Open the menu
+                $('.resources-overlay-container')
+                    .stop(true, true)
+                    .slideDown(400);
+
+                if (timeout > 0) {
+                    clearTimeout(timeout);
+                }
+            })
+                .on("mouseleave", function () {
+                resetHover();
+            });
+
+            $(".resources-overlay-container")
+                .on("mouseenter", function () {
+                // reset flag
+                hovering = true;
+                // reset timeout
+                //startTimeout();
+            })
+                .on("mouseleave", function () {
+                // The timeout is needed incase you go back to the main menu
+                resetHover();
+            });
+
+            function startTimeout() {
+                // This method gives you 1 second to get your mouse to the sub-menu
+                timeout = setTimeout(function () {
+                    closeMenu();
+                }, 50);
+            };
+
+            function closeMenu() {
+                // Only close if not hovering
+                if (!hovering) {
+                    $('.resources-overlay-container').stop(true, true).hide();
+                }
+            };
+
+            function resetHover() {
+                // Allow the menu to close if the flag isn't set by another event
+                hovering = false;
+                // Set the timeout
+                startTimeout();
+            };
+            /*-----------------*/
+
+        });
+        $(document).ready(function(){
+            $('.prod1').hover(function(){
+                $('.prod1-img').show();
+            });
+            $('.prod2').hover(function(){
+                $('.prod1-img').hide();
+                $('.prod2-img').show();},
+                    function(){
+                        $('.prod2-img').hide();
+                        $('.prod1-img').show();
+            });
+            $('.prod3').hover(function(){
+                $('.prod1-img').hide();
+                $('.prod3-img').show();},
+                    function(){
+                        $('.prod3-img').hide();
+                        $('.prod1-img').show();
+            });
+            $(function() {
+                $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
+        });
+    $(document).ready(function(){
+      $.cookieBar();
+    });
+    </script>
+    <script type="text/javascript">
+
+window.onload = function() {
+  var mySwiper = new Swiper('.swiper-container',{
+    //Your options here:
+    mode:'horizontal',
+    loop: false,
+    speed: 800,
+    autoplay: false,
+    pagination: '.my-pagination',
+    paginationClickable: true,
+    preventLinks: true,
+    createPagination: true
+    //etc..
+  }); 
+}
+
+
+</script>
+    <script src="js/vendor/modernizr.js"></script>
+    <script defer src="/plugins/idangerous.swiper.js"></script>
+    <script src="/plugins/jquery.cookiebar.js"></script>
+
+</footer>

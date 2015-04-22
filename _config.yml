@@ -13,59 +13,82 @@ highligher: rouge
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://prose.github.io/starter/'
-  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  siteurl: 'http://site-cwp.github.io/'
   media: 'media'
   metadata:
     _posts:
-      - name: "category"
-        field:
-          element: "hidden"
-          value: "blog"
       - name: "layout"
         field:
-          element: "hidden"
-          value: "blog"
+          element: "select"
+          label: "Post layout?"
+          placeholder: " "
+          options:
+          	- name: "Product"
+              value: "products"
+            - name: "Default (Like News posts)"
+              value: "post"
+      
       - name: "title"
         field:
           element: "text"
           label: "Title"
           value: ""
-      - name: "splash"
+      - name: "summary"
         field:
           element: "text"
-          label: "Splash image"
+          label: "Summary"
           value: ""
-      - name: "tags"
+      - name: "direct_link"
+        field:
+          element: "select"
+          label: "Direct to download (only for resources - like Factsheets)"
+          options:
+            - name: "Yes"
+            - value: "yes"
+            - name: "No"
+            - value: "no"
+      - name: "contains_pdf"
+        field:
+          element: "select"
+          label: "Have you attached a PDF? (only for resources. PDF must be placed inside the pdf folder with the same title as this post)"
+          options:
+            - name: "Yes"
+            - value: "yes"
+            - name: "No"
+            - value: "no"
+      - name: "categories"
         field:
           element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
+          label: "Select categories"
+          placeholder: "E.g. resource, white paper"
           options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
-            - name: "Pears"
-              value: "pears"
-            - name: "Mangos"
-              value: "mangos"
-    _posts/static:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "page"
-      - name: "title"
+            - name: "Products"
+              value: "products"
+            - name: "Featured products"
+              value: "featured"
+            - name: "Services"
+              value: "services"
+            - name: "Featured service"
+              value: "services-featured"
+            - name: "Jobs"
+              value: "job"
+            - name: "News"
+              value: "news"
+            - name: "Resources"
+              value: "resources"
+            - name: "Casestudy"
+              value: "casestudy"
+            - name: "Whitepaper"
+              value: "whitepaper"
+            - name: "Factsheet"
+              value: "factsheet"
+      - name: "tags"
         field:
           element: "text"
-          label: "Title"
+          label: "Post tags"
+          placeholder: "For SEO. Seperate each by comma"
           value: ""
-      - name: "permalink"
-        field:
-          element: "text"
-          label: "Permalink"
-          value: ""
-          
+		
 # Categories
 categories: 
  - news

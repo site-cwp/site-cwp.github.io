@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="{{ "/css/foundation-icons.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <meta name="google-site-verification" content="x9-E3Yrm9FGprKrWutA_iH6Z0vnaK8yRqWCvoBM_n44" />
-    {% if page.direct_link %}
+    {% if page.direct_link = "yes" %}
     <meta http-equiv="refresh" content="0; url=/assets/pdf/{{ page.title }}.pdf" />
     {% endif %}
     <script>

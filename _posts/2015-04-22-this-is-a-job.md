@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 tags: News
 categories: 
@@ -12,4 +12,3 @@ job: "yes"
 ---
 
 ## New job post
-

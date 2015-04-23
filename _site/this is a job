@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
-    <title>CWP | Standardisation</title>
-    <meta name="description" content="We will ensure your drawings conform to an agreed CAD standard and by using our CAD bureau you’ll benefit from knowing data isn’t being double-handled by different parties.">
-    <meta name="DC.description" content="We will ensure your drawings conform to an agreed CAD standard and by using our CAD bureau you’ll benefit from knowing data isn’t being double-handled by different parties."> 
-    <meta name="DC.title" content="CWP | Standardisation">
+    <title>CWP | The Changing Workplace</title>
+    <meta name="description" content="We are currently recruiting for a Marketing/Business Development Executive.">
+    <meta name="DC.description" content="We are currently recruiting for a Marketing/Business Development Executive."> 
+    <meta name="DC.title" content="CWP | ">
     <meta name="DC.subject" content="CAFM Software Solutions">
     <meta name="ROBOTs" content="INDEX, FOLLOW">
     <meta name="keywords" content="Corporate, Real Estate, Software, Solutions, CAFM, WebCoRE, MobileCoRE, Workplace, Tracking, Changing, Workplace, Work, Place, Change"> 
     <link type="image/ico" rel="icon" href="/assets/images/favicon64.png"> 
-    <meta name="description" content="We will ensure your drawings conform to an agreed CAD standard and by using our CAD bureau you’ll benefit from knowing data isn’t being double-handled by different parties.">
+    <meta name="description" content="We are currently recruiting for a Marketing/Business Development Executive.">
     <meta name="DC.language" schemes="ISO-8859-1" content="en">
     <link rel="stylesheet" href="/css/override.css">
     <link rel="stylesheet" href="/css/foundation.min.css">
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/flaticon.css">
     <link rel="stylesheet" href="/css/foundation-icons.css">
-    <link rel="canonical" href="http://changingworkplace.com/services-featured/services/cad-standardisation">
+    <link rel="canonical" href="http://changingworkplace.com/this%20is%20a%20job">
     <meta name="google-site-verification" content="x9-E3Yrm9FGprKrWutA_iH6Z0vnaK8yRqWCvoBM_n44" />
     
     <script>
@@ -56,7 +56,7 @@
 
     
 <header class="site-header">
-<div class="google-headings"><h1>Standardisation</h1><br><h1>CAD Bureau, Workplace Tracking</h1><br><h1>MobileCoRE, WebCoRE</h1><br><h1>The Changing Workplace, Software Solutions</h1></div>
+<div class="google-headings"><h1></h1><br><h1>CAD Bureau, Workplace Tracking</h1><br><h1>MobileCoRE, WebCoRE</h1><br><h1>The Changing Workplace, Software Solutions</h1></div>
     <!--Nav-->
     <div class="nav-row">
         <div class="row">
@@ -522,48 +522,58 @@
       <div class="wrapper">
         
         <style type="text/css">
-.inner img{
-    max-width: 100%!important;
+.inner img{ 
+width: 100%!important;
 }
-</style> 
-
-<div class="fullwidth white" style="padding-bottom:25px;"> 
-	<article class="inner row"><br>
-  		<div class="large-12 column">
-  			<h1 class="text-center text-thin">Standardisation</h1>
-  		</div>
-  		<div class="large-8 large-offset-2 column">
-  			<h3 class="text-center text-thin">We will ensure your drawings conform to an agreed CAD standard and by using our CAD bureau you’ll benefit from knowing data isn’t being double-handled by different parties.</h3>
-  		</div>
+.fullwidth.white{
+  min-height: 100vh!important;
+}
+.inner>.column>h3>ul{
+background-color: #763259;
+width: 100%;
+margin-left:0;
+padding: 15px;
+padding-left: 2em;
+}
+.inner>.column>h3>ul>li{
+color: #F2F2F4!important;
+}
+</style>
+<div class="fullwidth white">
+  <article class="inner row"><br>
+    <div class="large-12 column">
+      <h1 class="text-center text-thin"></h1>
+    </div>
+    <div class="large-8 column">
+      <h3 class="text-thin"><b></b><br> ## New job post
+This is a dummy job post</h3>
+    </div>
+    <div class="large-3 large-offset-1 medium-3 medium-offset-4 column">
+      
+        
+          <a target="_blank" rel="nofollow" href="/assets/pdf/JS BD Marketing.pdf">
+            <div class="download-panel">
+              <div class="page-fold">
+                <div class="corner-bottom-left"></div>
+                <div class="corner-padding"></div>
+              </div>
+              <h4 class="download-title text-left">Download</h4>
+              <div class="half-line half1"></div>
+              <div class="full-line full1"></div>
+              <div class="full-line full2"></div>
+              <div class="quarter-line quarter1"></div><br>
+              <div class="full-line full3"></div>
+              <div class="half-line half2"></div>
+              <div class="full-line full4"></div>
+            </div>
+          </a>
+        
+      
+      <h3 class="text-thin"></h3>
+    </div>
   </article>
+  <div class="fullwidth purple" style="margin-top:100px;height:80px;"><div class="inner"></div></div>
 </div>
-<div class="fullwidth purple">
-	<article class="inner row"><br>
-  		<div class="large-5 column text-center inline ">
-  			<h3 class="text-center text-light text-thin"><br>As CAD files come from a variety of sources and in differing standards, we standardise as required, transforming your existing drawings into comprehensive, consistent, compliant drawings.</h3>
-  		</div>
-  		<div class="text-center large-7 3d-img inline middle column ">
-  			<img alt="Our Products and Services: WebCoRE, MobileCoRe, CAD Bureau, Workplace Tracking, Space Management" class="" src="/assets/images/product-img/Standardisation1.png">
-  		</div>
-  </article>
-</div> 
-<div class="fullwidth pale-blue">
-	<article class="inner row"><br>
-		  <div class="text-center large-6 column middle inline">
-  			<img class="" src="/assets/images/product-img/Standardisation2.png">
-  		</div>
-  		<div class="large-6 column inline "> 
-  			<h3 class="text-center text-thin"><br>We’d be delighted to make a difference by standardising your CAD drawings, processes and procedures.</h3>
-  		</div>
-  		
-  </article>
-</div>
-<div class="fullwidth orange"> 
-
-</div>
-
-
-
 
 
       </div>

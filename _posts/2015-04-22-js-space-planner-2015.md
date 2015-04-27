@@ -1,6 +1,6 @@
 ---
 published: true
-title: "JS Space Planner 2015 "
+title: "JS Space Planner - April 2015 "
 layout: post
 contains_pdf: "yes"
 direct_link: "no"

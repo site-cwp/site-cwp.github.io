@@ -90,7 +90,7 @@ prose:
           placeholder: "For SEO. Seperate each by comma"
           value: ""
 # Categories
-categories: 
+categories:
  - news
  - products
  - services
@@ -103,3 +103,11 @@ categories:
 
 #Permalinks
 permalink: /:categories/:title
+
+#Overrides
+safe: true
+lsi: false
+source: /
+
+gems:
+  - jekyll-redirect-from
